@@ -1,0 +1,321 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.page-quinua {
+	position: relative;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	left: 50%;
+    top: -100px;
+	background: url("/static/grain/granos_quinua_A0_Rectangle_2_pattern.png") no-repeat;
+    background-size: 800px;
+	width: 795px;
+	height: 1500px;
+	overflow: hidden;
+}
+
+.page-quinua-next {
+	position: relative;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	left: 50%;
+    top: -100px;
+	background: rgba(187,187,187,0.5);
+    background-size: 800px;
+	width: 795px;
+	height: 1500px;
+	overflow: hidden;
+}
+
+.granos_quinua {
+	position: absolute;
+	overflow: visible;
+	width: 592.5px;
+	height: 1024px;
+	left: 0px;
+	top: -182px;
+}
+
+.opacity-super-light {
+	opacity: 0.1;
+}
+.opacity-light {
+	opacity: 0.15;
+}
+
+.opacity-strong {
+	opacity: 0.3;
+}
+
+.opacity-dense {
+		opacity: 0.09;
+}
+
+.top-triangle {
+    border-bottom: solid 320px transparent;
+    border-left: solid 110px transparent;
+    border-right: solid 700px rgb(255, 255, 255);
+	overflow: visible;
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	left: 0px;
+	top: 25px;
+}
+
+.top-triangle-sub {
+    border-bottom: solid 330px transparent;
+    border-left: solid 90px transparent;
+    border-right: solid 720px rgb(255, 255, 255);
+	overflow: visible;
+	position: absolute;
+	width: 500px;
+	height: 300px;
+    right: 100px;
+	left: 0px;
+	top: 25px;
+}
+
+.left-triangle {
+    border-bottom: solid 880px rgb(78, 205, 196);
+    border-left: solid 0px transparent;
+    border-right: solid 480px transparent;
+	overflow: visible;
+	position: absolute;
+	width: 393px;
+	height: 900px;
+	left: 0px;
+	top: 250px;
+}
+
+
+.left-triangle-sub {
+    border-bottom: solid 895px rgb(78, 205, 196);
+    border-left: solid 0px transparent;
+    border-right: solid 490px transparent;
+	overflow: visible;
+	position: absolute;
+	width: 393px;
+	height: 900px;
+	left: 0px;
+	top: 250px;
+}
+
+.left-triangle-sub-small-1 {
+    border-bottom: solid 400px black;
+    border-left: solid 261px transparent;
+    border-right: solid 217px transparent;
+	overflow: visible;
+	position: absolute;
+	width: 375px;
+	height: 285px;
+	left: 0px;
+	top: 747px;
+}
+
+.left-triangle-sub-small-2 {
+    border-bottom: solid 260px black;
+    border-left: solid 0px transparent;
+    border-right: solid 479px transparent;
+	overflow: visible;
+	position: absolute;
+	width: 375px;
+	height: 175px;
+	left: 0px;
+	top: 887px;
+}
+
+.title-bar {
+    border-bottom: 150px solid #fff;
+	border-left: 0px solid transparent;
+	border-right: 70px solid transparent;
+	overflow: visible;
+	position: absolute;
+	width: 500px;
+	height: 120px;
+	left: 0px;
+	top: 560px;
+}
+
+#ANDEAN {
+	position: absolute;
+	left: 17px;
+	top: 45px;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: PowerlineSymbols;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47px;
+	color: rgba(33,33,33,1);
+}
+
+#GRAINS {
+	position: absolute;
+	left: 225px;
+	top: 45px;
+	overflow: visible;
+	width: 156px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: PowerlineSymbols;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47px;
+	color: rgba(97,225,216,1);
+}
+
+.infer-triangle-sub {
+    border-bottom: 330px solid rgb(33, 33, 33);
+	border-left: 725px solid transparent;
+	border-right: 0px solid transparent;
+	overflow: visible;
+	position: absolute;
+	width: 690px;
+	height: 300px;
+	left: 70px;
+	top: 820px;
+}
+
+.infer-triangle {
+    border-bottom: 320px solid rgb(33, 33, 33);
+	border-left: 700px solid transparent;
+	border-right: 0px solid transparent;
+	overflow: visible;
+	position: absolute;
+	width: 690px;
+	height: 300px;
+	left: 100px;
+	top: 826px;
+}
+
+.next-triangle-big {
+    border-bottom: solid 1000px rgb(78, 205, 196);
+    border-left: solid 0px transparent;
+    border-right: solid 400px transparent;
+	overflow: visible;
+	position: absolute;
+	width: 400px;
+	height: 1000px;
+	left: 1px;
+	top: 147px;
+}
+
+.next-triangle-sub {
+    border-bottom: 105px solid rgb(33, 33, 33);
+	border-left: 725px solid transparent;
+	border-right: 0px solid transparent;
+	overflow: visible;
+	position: absolute;
+	width: 690px;
+	height: 300px;
+	left: 70px;
+	top: 847px;
+}
+
+.next-triangle {
+    border-bottom: 100px solid rgb(33, 33, 33);
+	border-left: 700px solid transparent;
+	border-right: 0px solid transparent;
+	overflow: visible;
+	position: absolute;
+	width: 690px;
+	height: 300px;
+	left: 100px;
+	top: 846px;
+}
+
+#title-infer {
+	position: absolute;
+	left: 85px;
+	top: 800px;
+	overflow: visible;
+	width: 172px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(255,255,255,1);
+}
+
+#ntp {
+	position: absolute;
+	left: 575px;
+	top: 990px;
+	overflow: visible;
+	width: 128px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(255,255,255,1);
+}
+
+.bar-icon {
+    display: inline-block;
+}
+
+.group-icon {
+	position: absolute;
+	width: 500px;
+	height: 32px;
+	top: 1050px;
+    left: 340px;
+	overflow: visible;
+}
+
+.circle-icon {
+    margin-left: 100px;
+	position: relative;
+	overflow: visible;
+	width: 32px;
+	height: 32px;
+	/* left: 0px; */
+	/* top: 0px; */
+    background: rgb(3, 149, 134);
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 46px;
+}
+
+/*to be restructured*/
+
+#COMPANY_NAME {
+	position: absolute;
+	left: 366px;
+	top: 27px;
+	overflow: visible;
+	width: 209px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 29px;
+	color: rgba(37,37,37,1);
+}
+#Report_issued_by__Date_of_issu {
+	position: absolute;
+	left: 355px;
+	top: 70px;
+	overflow: visible;
+	width: 102px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(117,117,117,1);
+}
+

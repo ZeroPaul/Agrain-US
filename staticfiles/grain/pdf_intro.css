@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.page-quinua {
+	position: relative;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	left: 50%;
+	background: #E5E5E5;
+	width: 592.2760009765625px;
+	height: 841.8900146484375px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: A4 – 1;
+	--web-view-id: A4___1;
+	--web-center-horizontally: true;
+	--web-enable-deep-linking: true;
+}
+.granos_quinua {
+	position: absolute;
+	overflow: visible;
+	width: 592.5px;
+	height: 1024px;
+	left: 0px;
+	top: -182px;
+}
+#Trazado_5 {
+	opacity: 0.52;
+	filter: blur(6.6px);
+}
+
+#Trazado_6 {
+	opacity: 0.35;
+}
+
+.Trazado_6 {
+	overflow: visible;
+	position: absolute;
+	width: 475.276px;
+	height: 255.45px;
+	left: 117px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.opacity-super-light {
+	opacity: 0.1;
+}
+.opacity-light {
+	opacity: 0.15;
+}
+
+.opacity-strong {
+	opacity: 0.3;
+}
+
+.opacity-dense {
+		opacity: 0.09;
+}
+
+.top-triangle {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 481.276px;
+	height: 267px;
+	left: 129px;
+	top: -4px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.left-triangle {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 393px;
+	height: 696px;
+	left: -4px;
+	top: 164px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.left-triangle-sub {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 403px;
+	height: 717px;
+	left: -4px;
+	top: 143px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.left-triangle-sub-small-1 {
+	overflow: visible;
+	position: absolute;
+	width: 375px;
+	height: 285px;
+	left: 0px;
+	top: 557px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.left-triangle-sub-small-2 {
+	overflow: visible;
+	position: absolute;
+	width: 375px;
+	height: 175px;
+	left: 0px;
+	top: 667px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.title-bar {
+	filter: drop-shadow(0px 6px 9px rgba(0, 0, 0, 0.161));
+	overflow: visible;
+	position: absolute;
+	width: 452px;
+	height: 133px;
+	left: 0px;
+	top: 368px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+#ANDEAN {
+	position: absolute;
+	left: 17px;
+	top: 406px;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: PowerlineSymbols;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47px;
+	color: rgba(33,33,33,1);
+}
+
+#GRAINS {
+	position: absolute;
+	left: 225px;
+	top: 406px;
+	overflow: visible;
+	width: 156px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: PowerlineSymbols;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47px;
+	color: rgba(97,225,216,1);
+}
+.infer-triangle-sub {
+	overflow: visible;
+	position: absolute;
+	width: 575.276px;
+	height: 262px;
+	left: 17px;
+	top: 581px;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+.infer-triangle {
+	overflow: visible;
+	position: absolute;
+	width: 543.276px;
+	height: 246px;
+	left: 49px;
+	top: 597px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#RESULT_OF_QUINUA_ANALYSIS {
+	position: absolute;
+	left: 41px;
+	top: 535px;
+	overflow: visible;
+	width: 172px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(255,255,255,1);
+}
+
+.circle-icon {
+	position: absolute;
+	overflow: visible;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+}
+
+
+/*to be restructured*/
+
+#Grupo_1 {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 526px;
+	top: 772px;
+	overflow: visible;
+}
+
+
+.Icon_material_home {
+	overflow: visible;
+	position: absolute;
+	width: 20.87px;
+	height: 17.739px;
+	left: 6.13px;
+	top: 6.957px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_3 {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 434px;
+	top: 772px;
+	overflow: visible;
+}
+
+.Icon_material_verified_user {
+	overflow: visible;
+	position: absolute;
+	width: 13.909px;
+	height: 17px;
+	left: 9.006px;
+	top: 8px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Grupo_2 {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 344px;
+	top: 772px;
+	overflow: visible;
+}
+
+#Icon_material_bubble_chart {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	left: 8px;
+	top: 8px;
+	overflow: visible;
+}
+.Trazado_10 {
+	overflow: visible;
+	position: absolute;
+	width: 6.8px;
+	height: 6.8px;
+	left: 0px;
+	top: 7.65px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Trazado_11 {
+	overflow: visible;
+	position: absolute;
+	width: 4.25px;
+	height: 4.25px;
+	left: 9.35px;
+	top: 12.75px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Trazado_12 {
+	overflow: visible;
+	position: absolute;
+	width: 10.2px;
+	height: 10.2px;
+	left: 6.8px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#NTP_011_453_2014 {
+	position: absolute;
+	left: 434px;
+	top: 710px;
+	overflow: visible;
+	width: 128px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	color: rgba(255,255,255,1);
+}
+.Icon_material_grain {
+	overflow: visible;
+	position: absolute;
+	width: 48.699px;
+	height: 48.699px;
+	left: 296px;
+	top: 21px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#COMPANY_NAME {
+	position: absolute;
+	left: 366px;
+	top: 27px;
+	overflow: visible;
+	width: 209px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 29px;
+	color: rgba(37,37,37,1);
+}
+#Report_issued_by__Date_of_issu {
+	position: absolute;
+	left: 355px;
+	top: 70px;
+	overflow: visible;
+	width: 102px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(117,117,117,1);
+}
+
+
+.page-all {
+    width: 210mm;
+    height: 297mm;
+}
+

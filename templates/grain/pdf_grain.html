@@ -1,0 +1,227 @@
+{% load static %}
+{% load pdf_filters %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Template of Quinua</title>
+    <link rel="stylesheet" href="{% static "iconfont/material-icons.css" %}" type="text/css" media="print">
+    <link rel="stylesheet" href="{% static "grain/pdf_intro.css" %}" type="text/css" media="print">
+    <link rel="stylesheet" href="{% static "grain/page-data.css" %}" type="text/css" media="print">
+</head>
+<body>
+
+    <div class="page-quinua">
+        <div class="top-triangle-sub opacity-strong"></div>
+        <div class="top-triangle"></div>
+        <div class="left-triangle-sub opacity-strong"></div>
+        <div class="left-triangle"></div>
+        <div class="left-triangle-sub-small-1 opacity-dense"></div>
+        <div class="left-triangle-sub-small-2 opacity-dense"></div>
+        <div class="title-bar">
+            <div id="ANDEAN">
+		        <span>ANDEAN</span>
+	        </div>
+	        <div id="GRAINS">
+		        <span>GRAINS</span>
+	        </div>
+        </div>
+        <div id="title-infer">
+            <span>RESULT<br/>OF QUINUA<br/>ANALYSIS</span>
+        </div>
+        <div class="infer-triangle-sub opacity-strong"></div>
+        <div class="infer-triangle"></div>
+        <div id="ntp">
+		    <span>NTP 011.453:2014</span>
+	    </div>
+        <div class="bar-icon">
+            <div class="group-icon">
+                <div class="circle-icon">
+                    <i class="material-icons white">bubble_chart</i>
+                </div>
+                <div class="circle-icon">
+                    <i class="material-icons white">verified_user</i>
+                </div>
+                <div class="circle-icon">
+                    <i class="material-icons white">home</i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="page-quinua-next">
+        <div class="next-triangle-big opacity-light"></div>
+        <div class="title-head">
+            <span class="principal">Information General</span>
+            <div class="principal-line"></div>
+        </div>
+
+        <div class="image">
+
+		<table cellpadding="0" cellspacing="0">
+            <tr>
+                <th colspan="2">Sample Image</th>
+            <tr>
+                <td colspan="2">
+                    <img src="{{ sample.image.url }}" alt="grain"/>
+                </td>
+            </tr>
+            <tr class="light-th">
+                <th>details</th>
+                <td>to deta</td>
+            </tr>
+            <tr class="light-th">
+                <th>Description</th>
+                <td>
+                    Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. 
+                </td>
+            </tr>
+            <tr class="light-th">
+                <th>Date</th>
+                <td>to deta</td>
+            </tr>
+        </table>
+        </div>
+        <div class="next-triangle-sub opacity-strong"></div>
+        <div class="next-triangle"></div>
+    </div>
+    
+    {% for detail in details %}
+    <div class="page-quinua-next">
+        <div class="next-triangle-big opacity-light"></div>
+        <div class="title-head">
+            <span class="principal">Grain Detail</span>
+            <div class="principal-line"></div>
+        </div>
+        
+        <div class="two-col">
+            {% for sd in detail %}
+            <div class="card">
+                <div class="card-content">
+                    <div class="seed">                                  
+                        <img src="{{ sd.image_result.url }}" alt="seed">
+                        <div class="dimension-h"></div>                 
+                        <span class="font-measure-h">                   
+                            {{ sd.heigth_grain | redecimal }}mm         
+                        </span>                                         
+                        <div class="dimension-h"></div>                 
+                        <div class="dimension-w"></div>                 
+                        <span class="font-measure-w">                   
+                            {{ sd.width_grain | redecimal }}mm          
+                        </span>                                         
+                        <div class="dimension-w"></div>                 
+                    </div>                                              
+                    <div class="liner-div"></div>                       
+                    <div class="seed-list">                             
+                        <ul>                                            
+                            <li>{{ sd.name_seed }}</li>                 
+                            <li>{{ sd.type_grain_detail }}</li>         
+                            <li>Category</li>                           
+                            <li>                                        
+                                {{ sd.width_grain | redecimal }} x      
+                                {{ sd.heigth_grain | redecimal }}       
+                                (mm)                                    
+                            </li>                                       
+                            <li>Diameter {{ sd.diameter_grain | redecimal }}</li>
+                            <li>Tea</li>                                
+                        </ul>                                           
+                    </div>                                              
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="next-triangle-sub opacity-strong"></div>
+        <div class="next-triangle"></div>
+    </div>
+    {% endfor %}
+
+    <div class="page-quinua-next">
+        <div class="next-triangle-big opacity-light"></div>
+        <div class="title-head">
+            <span class="principal">General Result</span>
+            <div class="principal-line"></div>
+        </div>
+        <div id="tables-container">
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<th>Parameters</th>
+				<th>Unit</th>
+				<th>Percent</th>
+			</tr>
+			<tr>
+				<td>Whole grain</td>
+				<td>%</td>
+                <td>{{ all_percents.whole_grain | redecimal }}</td>	
+			</tr>
+			<tr>
+				<td>Broken grain</td>
+				<td>%</td>
+                <td>0.0</td>	
+			</tr>
+			<tr>
+				<td>Damaged grain</td>
+				<td>%</td>
+                <td>{{ all_percents.damaged_grain | redecimal }}</td>	
+			</tr>
+			<tr>
+				<td>Sprouted grain</td>
+				<td>%</td>
+                <td>0.0</td>
+			</tr>
+			<tr>
+				<td>Coated grain</td>
+				<td>%</td>
+                <td>{{ all_percents.coated_grain | redecimal }}</td>
+			</tr>
+			<tr>
+				<td>Immature grain</td>
+				<td>%</td>
+                <td>0.0</td>
+			</tr>
+			<tr>
+				<td>Contrasting grain</td>
+				<td>%</td>
+                <td>0.0</td>	
+			</tr>
+			
+		</table>
+
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<th>Grain size</th>
+				<th>Unit</th>
+				<th>Percent</th>
+			</tr>
+			<tr>
+				<td>BIG (firts)</td>
+				<td>%</td>
+				<td>99.1</td>	
+			</tr>
+			<tr>
+				<td>MEDIUM (second)</td>
+				<td>%</td>
+				<td>00.0</td>	
+			</tr>
+			<tr>
+				<td>SMALL (third)</td>
+				<td>%</td>
+				<td>00.0</td>	
+			</tr>
+		</table>
+	</div> 
+        <div class="next-triangle-sub opacity-strong"></div>
+        <div class="next-triangle"></div>
+    </div> 
+
+
+    <div class="page-quinua-next">
+        <div class="next-triangle-big opacity-light"></div>
+
+        <div class="next-triangle-sub opacity-strong"></div>
+        <div class="next-triangle"></div>
+    </div>
+</body>
+</html>
